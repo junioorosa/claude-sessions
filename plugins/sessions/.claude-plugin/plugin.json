@@ -6,5 +6,6 @@
   "author": { "name": "Junior Rosa", "url": "https://github.com/junioorosa" },
   "homepage": "https://github.com/junioorosa/claude-sessions",
   "repository": "https://github.com/junioorosa/claude-sessions",
+  "license": "MIT",
   "keywords": ["sessions", "history", "viewer", "resume"]
 }

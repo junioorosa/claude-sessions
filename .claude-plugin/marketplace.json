@@ -7,8 +7,8 @@
       "name": "sessions",
       "source": "./plugins/sessions",
       "displayName": "Sessions",
-      "description": "Local sidebar for your Claude Code sessions: pin, group, search, read transcripts and resume with one click.",
-      "keywords": ["sessions", "history", "viewer", "resume"]
+      "description": "Sidebar for your Claude Code sessions: pin, group, search transcripts and reopen any session in a terminal with one click. Zero-token /sessions command; each config dir (account) sees only its own sessions.",
+      "keywords": ["sessions", "session-manager", "session-history", "transcripts", "resume", "sidebar", "history", "viewer", "claude-code"]
     }
   ]
 }

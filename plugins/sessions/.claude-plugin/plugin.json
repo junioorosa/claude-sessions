@@ -1,11 +1,11 @@
 {
   "name": "sessions",
   "displayName": "Sessions",
-  "description": "Local sidebar for your Claude Code sessions: pin, group, search, read transcripts and resume with one click. Reads the active config dir (CLAUDE_CONFIG_DIR or ~/.claude), so each account sees its own sessions.",
+  "description": "Sidebar for your Claude Code sessions: pin, group, search transcripts and reopen any session in a terminal with one click. Zero-token /sessions command; each config dir (account) sees only its own sessions.",
   "version": "0.1.0",
   "author": { "name": "Junior Rosa", "url": "https://github.com/junioorosa" },
   "homepage": "https://github.com/junioorosa/claude-sessions",
   "repository": "https://github.com/junioorosa/claude-sessions",
   "license": "MIT",
-  "keywords": ["sessions", "history", "viewer", "resume"]
+  "keywords": ["sessions", "session-manager", "session-history", "transcripts", "resume", "sidebar", "history", "viewer", "claude-code"]
 }

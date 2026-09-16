@@ -1,0 +1,14 @@
+{
+  "name": "claude-sessions",
+  "owner": { "name": "Junior Rosa", "url": "https://github.com/junioorosa" },
+  "metadata": { "description": "Sessions viewer plugin for Claude Code" },
+  "plugins": [
+    {
+      "name": "sessions",
+      "source": "./plugins/sessions",
+      "displayName": "Sessions",
+      "description": "Local sidebar for your Claude Code sessions: pin, group, search, read transcripts and resume with one click.",
+      "keywords": ["sessions", "history", "viewer", "resume"]
+    }
+  ]
+}

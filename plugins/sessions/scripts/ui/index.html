@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sessions</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <header>
+      <div class="brand">
+        <span>Sessions</span>
+        <small id="config-dir" title="config dir"></small>
+      </div>
+      <div class="tools">
+        <input id="search" type="search" placeholder="Filter titles - Enter searches messages" autocomplete="off">
+        <button id="filter" class="icon" title="Filters: status, source, grouping, sorting">&#9881;</button>
+        <button id="refresh" class="icon" title="Refresh"><span class="glyph">&#8635;</span></button>
+      </div>
+    </header>
+    <nav id="sections"></nav>
+  </aside>
+  <main id="main">
+    <div id="empty-state">
+      <p>Select a session on the left.</p>
+      <p>Right-click a row for pin, groups, rename and more. Double-click resumes it in a terminal.</p>
+      <p>The &#9881; button sets status, source, grouping and sorting.</p>
+      <p><kbd>/sessions</kbd> in Claude Code reopens this page.</p>
+    </div>
+    <div id="session" hidden>
+      <header id="session-header"></header>
+      <div id="transcript-tools">
+        <label><input type="checkbox" id="show-tools"> tool calls</label>
+        <label><input type="checkbox" id="show-thinking"> thinking</label>
+        <label><input type="checkbox" id="show-context"> injected context</label>
+        <span class="spacer"></span>
+        <span id="transcript-stats"></span>
+      </div>
+      <div id="transcript"></div>
+    </div>
+  </main>
+</div>
+<div id="menu" class="menu" hidden></div>
+<div id="filter-menu" class="menu filter-menu" hidden></div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

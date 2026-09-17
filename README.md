@@ -4,6 +4,8 @@ A local sidebar for your Claude Code sessions, in the spirit of the desktop app:
 
 `/sessions` inside Claude Code opens it in your browser. It costs zero tokens: a `UserPromptSubmit` hook handles the command before the model sees it.
 
+![Demo: opening a session, expanding a tool call, grouping by folder, searching messages, pinning and resuming](assets/demo.gif)
+
 ## Requirements
 
 - Claude Code 2.1.265 or newer

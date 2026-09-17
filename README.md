@@ -1,6 +1,6 @@
-# sessions
+# Claude Sessions
 
-A local sidebar for your Claude Code sessions, in the spirit of the desktop app: pinned sessions, groups, search across titles and message bodies, readable transcripts, and one-click resume in a terminal.
+Claude Sessions is a local sidebar for your Claude Code sessions, in the spirit of the desktop app: pinned sessions, groups, search across titles and message bodies, readable transcripts, and one-click resume in a terminal.
 
 `/sessions` inside Claude Code opens it in your browser. It costs zero tokens: a `UserPromptSubmit` hook handles the command before the model sees it.
 

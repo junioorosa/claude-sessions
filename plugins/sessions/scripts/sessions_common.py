@@ -13,7 +13,7 @@ import sys
 import zlib
 from pathlib import Path
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 PORT_BASE = 47900
 PORT_SPAN = 100
 UUID_RE = re.compile(r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")

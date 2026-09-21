@@ -2,7 +2,7 @@
   "name": "sessions",
   "displayName": "Sessions",
   "description": "Sidebar for your Claude Code sessions: pin, group, search transcripts and reopen any session in a terminal with one click. Zero-token /sessions command; each config dir (account) sees only its own sessions.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": { "name": "Junior Rosa", "url": "https://github.com/junioorosa" },
   "homepage": "https://github.com/junioorosa/claude-sessions",
   "repository": "https://github.com/junioorosa/claude-sessions",

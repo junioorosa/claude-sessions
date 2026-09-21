@@ -32,8 +32,11 @@ def _windows(cwd, argv, env):
     wt = shutil.which("wt.exe") or shutil.which("wt")
     if wt:
         # -w 0: most recent Windows Terminal window. cmd /k keeps the tab open on early exit.
-        subprocess.Popen([wt, "-w", "0", "new-tab", "-d", cwd, "--title", "claude", "cmd", "/k"] + argv,
-                         env=env, creationflags=flags, close_fds=True)
+        # WT_PROFILE_ID is the profile of the terminal that ran /sessions: reuse it so the
+        # tab keeps that profile's color and settings instead of the default one.
+        profile = os.environ.get("WT_PROFILE_ID", "").strip()
+        command = [wt, "-w", "0", "new-tab"] + (["-p", profile] if profile else []) + ["-d", cwd, "--title", "claude", "cmd", "/k"] + argv
+        subprocess.Popen(command, env=env, creationflags=flags, close_fds=True)
         return True, "Windows Terminal"
     command = 'start "claude" /D "%s" cmd /k %s' % (cwd, subprocess.list2cmdline(argv))
     subprocess.Popen(command, shell=True, env=env, creationflags=flags, close_fds=True)
